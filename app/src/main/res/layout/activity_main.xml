@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffc107">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="20dp"
+            android:layout_width="360dp"
+            android:layout_height="180dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/edtMovieName"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:hint="movie name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="SEARCH"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_shape_selector"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
